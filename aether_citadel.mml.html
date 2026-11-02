@@ -1,0 +1,46 @@
+<!--
+  THE AETHER CITADEL — Otherside MML placement file
+  1) Upload the 4 GLBs (citadel_grounds / walls / keep / crown) to a public host.
+  2) Replace every  https://YOUR-HOST/aether-citadel/  below with your real folder URL.
+  3) Paste into mmleditor.com -> Static Version -> Publish -> add the URL at otherside.xyz/mmls.
+
+  Units are meters, Y is up. Footprint ~152 m x 158 m, crown tip ~112 m.
+  To move/rotate/resize the whole castle, edit the outer m-group (x / y / z / ry / sx sy sz).
+-->
+<m-group id="aether-citadel" x="0" y="0" z="0" ry="0" sx="1" sy="1" sz="1">
+
+  <!-- Plinth, grand stairs, royal path, crystal lamps & braziers -->
+  <m-model id="citadel-grounds" src="https://YOUR-HOST/aether-citadel/citadel_grounds.glb"></m-model>
+
+  <!-- Curtain walls + wall-walks, 4 corner towers with spiral stairs, gatehouse -->
+  <m-model id="citadel-walls" src="https://YOUR-HOST/aether-citadel/citadel_walls.glb"></m-model>
+
+  <!-- The Keep: great hall, 3 upper floors, atrium, roof terrace, turrets, lantern spire, chandelier -->
+  <m-model id="citadel-keep" src="https://YOUR-HOST/aether-citadel/citadel_keep.glb"></m-model>
+
+  <!-- Floating Aether Crown: slow spin + gentle hover -->
+  <m-group id="crown-hover">
+    <m-attr-anim attr="y" start="0" end="2.5" duration="6000" loop="true" ping-pong="true" easing="easeInOutSine"></m-attr-anim>
+    <m-model id="citadel-crown" src="https://YOUR-HOST/aether-citadel/citadel_crown.glb" collide="false" cast-shadows="false">
+      <m-attr-anim attr="ry" start="0" end="360" duration="120000" loop="true"></m-attr-anim>
+    </m-model>
+    <m-light type="point" x="0" y="97.5" z="0" color="#6fe8ff" intensity="6000" distance="90" cast-shadows="false"></m-light>
+  </m-group>
+
+  <!-- Lighting (no shadows for performance). Tune intensity if your district is brighter/darker. -->
+  <!-- Great hall + atrium -->
+  <m-light type="point" x="0"   y="20.5" z="0"   color="#7fe6ff" intensity="2500" distance="45" cast-shadows="false"></m-light>
+  <m-light type="point" x="0"   y="7.5"  z="14"  color="#ff8ae6" intensity="800"  distance="26" cast-shadows="false"></m-light>
+  <m-light type="point" x="0"   y="7.5"  z="-14" color="#9a8cff" intensity="800"  distance="26" cast-shadows="false"></m-light>
+  <!-- Upper floors (F1 / F2 / F3) -->
+  <m-light type="point" x="-15" y="14"   z="0"   color="#c9a8ff" intensity="500"  distance="20" cast-shadows="false"></m-light>
+  <m-light type="point" x="15"  y="14"   z="0"   color="#c9a8ff" intensity="500"  distance="20" cast-shadows="false"></m-light>
+  <m-light type="point" x="-15" y="21"   z="0"   color="#a8e8ff" intensity="500"  distance="20" cast-shadows="false"></m-light>
+  <m-light type="point" x="15"  y="21"   z="0"   color="#a8e8ff" intensity="500"  distance="20" cast-shadows="false"></m-light>
+  <m-light type="point" x="-15" y="28"   z="0"   color="#ffa8e8" intensity="500"  distance="20" cast-shadows="false"></m-light>
+  <m-light type="point" x="15"  y="28"   z="0"   color="#ffa8e8" intensity="500"  distance="20" cast-shadows="false"></m-light>
+  <!-- Gate + courtyard -->
+  <m-light type="point" x="0"   y="9.5"  z="70"  color="#ff6fd8" intensity="1500" distance="30" cast-shadows="false"></m-light>
+  <m-light type="point" x="0"   y="13.5" z="40"  color="#8f7bff" intensity="2000" distance="50" cast-shadows="false"></m-light>
+
+</m-group>
