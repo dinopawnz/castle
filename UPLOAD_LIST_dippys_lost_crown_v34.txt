@@ -1,0 +1,32 @@
+DIPPY'S LOST CROWN v34 - the escape-room crown hunt
+==================================================
+
+1) PUT IN YOUR OTHERSIDE MML FOLDER
+   dippys_lost_crown.html          (or dippys_lost_crown_nosign.html if you don't want the entrance sign)
+   dippys_lost_crown_remote.html   (host remote, PIN 3479)
+
+2) UPLOAD TO github.com/dinopawnz/castle (main), replacing any file with the same name
+   v33 castle changes you haven't uploaded yet (still needed):
+     citadel_cellar_gate.glb
+     citadel_door_archive.glb  citadel_door_music.glb  citadel_door_rainbow.glb  citadel_door_sugar.glb  citadel_door_vault.glb
+     citadel_floor0.glb  citadel_floor3.glb  citadel_fx_petals.glb  citadel_gardens.glb  citadel_grounds.glb
+     citadel_hunt_crown.glb  citadel_hunt_shard.glb
+     citadel_secret_books.glb  citadel_secret_music.glb  citadel_secret_rainbow.glb  citadel_secret_sugar.glb
+   v34 (new or changed):
+     citadel_undercroft.glb   (the v34 one: hole + passage cut for the dungeons. Use this, NOT the v33 one)
+     citadel_dungeon.glb  citadel_dungeon_water.glb
+     dun_board.glb  dun_book.glb  dun_book_open.glb  dun_booktab.glb
+     dun_cage_gold.glb  dun_cage_lilac.glb  dun_cage_pink.glb  dun_cage_silver.glb
+     dun_candle.glb  dun_chest_gold.glb  dun_chest_lilac.glb  dun_chest_pink.glb
+     dun_crank.glb  dun_door.glb  dun_drawer.glb  dun_grate.glb
+     dun_key_iron.glb  dun_key_lilac.glb  dun_keypad.glb
+     dun_lid_gold.glb  dun_lid_lilac.glb  dun_lid_pink.glb
+     dun_lock3.glb  dun_lock4.glb  dun_mapstars.glb
+     dun_pic_cake.glb  dun_pic_fang.glb  dun_pic_granny.glb  dun_pic_grimble.glb  dun_pic_rock.glb
+     dun_plank.glb  dun_podium.glb  dun_portrait.glb  dun_rainbow.glb  dun_safedoor.glb  dun_stone.glb  dun_toolbox_lid.glb
+   (sounds, unicorns, fire + sparkle effects are already in the repo; nothing to delete)
+
+3) IN THE WORLD
+   Place dippys_lost_crown.html: it appears as a small pink placer cube.
+   Open the remote, enter PIN 3479, press LIVE BUILD to raise the castle + dungeons, then "Start the hunt".
+   VER is "?v=34", so Otherside fetches the new files fresh.
