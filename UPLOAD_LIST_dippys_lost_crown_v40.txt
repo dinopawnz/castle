@@ -1,0 +1,18 @@
+DIPPY'S LOST CROWN v40 - upload these 9 files to dinopawnz/castle (main), replacing any with the same name
+
+NEW
+  citadel_harp_painting.glb   the harp painting clue, now hanging in the 1st-floor salon
+  citadel_stair_seal.glb      fills the old courtyard stairwell (finished wall in the Undercroft)
+  citadel_cherry_tree.glb     detailed cherry tree for the mesa (replaces the blob trees)
+  citadel_rose_bush.glb       detailed rose bush for the mesa (replaces the blob bushes)
+
+CHANGED
+  citadel_grounds.glb         courtyard floor with no stair opening; checkered strip by the fountain is stone again
+  citadel_mesa.glb            the mesa without its old blob trees/bushes
+  citadel_floor0.glb          the old harp painting taken off the ground-floor wall
+  citadel_clues.glb           harp painting removed (it is its own model now)
+  citadel_gardens.glb         back to the original (the cherry tree returns to its spot by the old stairs)
+
+No longer used (safe to delete from the repo, or leave): citadel_cellar_stair.glb, citadel_cellar_lid.glb
+Everything else from v38/v39 is already in the repo and unchanged.
+The game file uses VER "?v=40", so Otherside fetches the new files fresh.
